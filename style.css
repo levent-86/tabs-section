@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+/* RESET CODES START */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: steelblue;
+}
+/* RESET CODES FINISH */
+
+.container {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BUTTONS START */
+.btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    background-color: lightblue;
+    padding: 20px 0;
+    width: calc(100% / 3 + 1%);
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s ease-in;
+    user-select: none;
+}
+.btn:hover {
+    background-color: lightpink;
+}
+.btn.active {
+    background-color: white;
+}
+/* BUTTONS FINISH */
+
+/* CONTENT START */
+.content {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.writings {
+    display: none;
+    margin: 70px 20px 0;
+}
+
+.writings p {
+    text-indent: 20px;
+
+}
+
+.container .content .writings.activate {
+    display: block;
+}
+/* CONTENT FINISH */
